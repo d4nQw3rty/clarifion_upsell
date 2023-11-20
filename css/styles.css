@@ -57,7 +57,7 @@ body {
   justify-content: space-between;
 }
 
-.purchase_info {
+.info {
   display: flex;
   flex-direction: column;
   position: relative;
