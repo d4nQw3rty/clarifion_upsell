@@ -1,3 +1,126 @@
-h1 {
-  color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  /* Layout */
+  width: 360px;
+  height: 1519px;
+  top: -255px;
+  left: 1847px;
+  border: 1px black solid;
+
+  /* Color */
+  background-color: #fff;
+}
+
+.header {
+  padding: 0 0 20px 0;
+  gap: 20px;
+}
+
+.head_list {
+  /* Layout */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 320px;
+  padding: 10px 20px 10px 20px;
+
+  /* Color */
+  background: #252f3d;
+  list-style: none;
+
+  /* Text */
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+.head_list li {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo_section {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.logos_display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase_info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+  height: 1251px;
+  top: 32px;
+  left: 20px;
+  gap: 24px;
+  border: 1px slateblue solid;
+}
+
+.text_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  color: #000;
+}
+
+.text_title {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #4d5254;
+  margin-top: 20px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.steps li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps li img {
+  width: 20px;
+  height: 20px;
+}
+
+.steps li p {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-align: left;
 }
