@@ -4,9 +4,6 @@ body {
   /* Layout */
   width: 360px;
   height: 1519px;
-  top: -255px;
-  left: 1847px;
-  border: 1px black solid;
   margin: 0;
 
   /* Color */
@@ -16,7 +13,6 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   width: 360px;
   height: 102px;
 }
@@ -28,7 +24,7 @@ body {
   margin: 0;
   width: 320px;
   height: 42px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   z-index: 99;
 
   /* Color */
@@ -45,7 +41,7 @@ body {
   color: #fff;
 }
 
-.header_list li {
+.header_list_item {
   align-self: center;
   display: flex;
   align-items: center;
@@ -53,7 +49,7 @@ body {
 }
 
 .header_logo_section {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .header_logos_display {
@@ -76,18 +72,17 @@ body {
   display: flex;
   flex-direction: column;
   width: 320px;
-  height: 104px;
-  gap: 24px;
 }
 
 .title {
   font-family: Manrope, Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 400;
-  line-height: 45px;
+  line-height: 36px;
   letter-spacing: 0;
   text-align: center;
   color: #000;
+  margin: 0;
 }
 
 .text_title {
@@ -98,7 +93,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: #4d5254;
-  margin: 0;
+  margin-block: 10px 0;
 }
 
 .steps {
@@ -114,6 +109,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
 }
 
 .steps li img {
@@ -125,9 +121,10 @@ body {
   font-family: Manrope, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 13px;
+  line-height: 9px;
   letter-spacing: 0;
   text-align: left;
+  margin-block: 0;
 }
 
 .offer_title {
@@ -140,34 +137,449 @@ body {
   margin: 0;
 }
 
-/* .offer_title span {
+.offer_info {
+  display: block;
+}
 
-  <section class="info">
-    <div class="text_info">
-      <h1 class="title">Wait ! your order in progress.</h1>
-      <span class="text_title">Lorem ipsum dolor sit amet, consectetur</span>
-    </div>
-    <ul class="steps">
-      <li>
-        <img src="img/checked_green_arrow.png" alt="checked correctly">
-        <p>Cart Review</p>
-      </li>
-      <li>
-        <img src="img/checked_green_arrow.png" alt="checked correctly">
-        <p>Chechout</p>
-      </li>
-      <li>
-        <img src="img/step_03.png" alt="step number three active">
-        <p>Special Offer</p>
-      </li>
-      <li>
-        <img src="img/step_4_no_active.png" alt="step number four no active">
-        <p>Confirmation</p>
-      </li>
-    </ul>
-    <div class="product_info">
-      <h1 class="offer_title"><span>ONE TIME ONLY</span> special price for 6 extra Clarifion for only $14 each ($84.00 total!)</h1>
-    </div>
-  </section>
+.offer_img {
+  width: 320px;
+  border-radius: 10px;
+}
 
-} */
+.offer_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.34px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-block: 0;
+}
+
+.offer_text span {
+  color: #2c7ef8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.preview_container {
+  display: flex;
+  gap: 16px;
+}
+
+.preview_image_container {
+  background: #2c7ef8;
+  border-radius: 10px;
+  height: 80px;
+}
+
+.preview_info_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 3;
+  justify-content: center;
+}
+
+.preview_info_frame_one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview_container_offer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.preview_title {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-block: 0;
+}
+
+.normal_price {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 10px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.offer_price {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 10px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #2c7ef8;
+}
+
+.offer_img_container {
+  height: 12px;
+}
+
+.stock {
+  height: 16px;
+}
+
+.preview_product_details {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #4d5254;
+  width: 325px;
+}
+
+.product_details_list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.detail_list_item {
+  display: flex;
+  gap: 12px;
+  height: 16px;
+}
+
+.check_container {
+  display: flex;
+  align-items: center;
+}
+
+.details_list_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #4d5254;
+}
+
+.save_info_container {
+  display: flex;
+  padding: 12px 16px;
+  border-radius: 10px;
+  gap: 10px;
+  background: #edf3fd;
+}
+
+.save_info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.save_info_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.payment_section_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment_options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 134px;
+}
+
+.discount {
+  border-radius: 50px;
+  padding: 16px 64px 16px 64px;
+  gap: 10px;
+  background: #59ae43;
+}
+
+.discount_text_container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 320px;
+}
+
+.discount_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+.shipping_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: solid 1px #cfcfcf;
+}
+
+.shipping_container_info {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  gap: 12px;
+}
+
+.secure_info {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.free_shipping_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.secure_info_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.payment_logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  height: 14px;
+}
+
+.link_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.alert {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #f82c2c;
+  text-decoration: underline;
+}
+
+.decoration_none {
+  text-decoration: none;
+}
+
+.guarantee_section {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.guarantee_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.4px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  top: 1417px;
+  height: 102px;
+  width: 360px;
+  gap: 16px;
+  position: absolute;
+  background: #252f3d;
+}
+
+.foot_info {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  gap: 12px;
+  padding: 8px 0;
+  margin-block-end: 0;
+}
+
+.foot_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+.foot_secure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.foot_secure_text {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.mb {
+  margin-block: 0;
+}
+
+.w_700 {
+  font-weight: 700;
+}
+
+.blue_text {
+  color: #2c7ef8;
+}
+
+.gray_text {
+  color: #4d5254;
+}
+
+.line {
+  border: solid 1px #cfcfcf;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.manrope {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+}
+
+.header_list_desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    width: 1500px;
+    height: 1379px;
+    border: solid 1px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    height: 102px;
+  }
+
+  .header_list {
+    /* Layout */
+    display: none;
+  }
+
+  .header_list_desktop {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background: #252f3d;
+  }
+
+  .header_list_desktop_1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    height: 22px;
+    top: 15px;
+    left: 127px;
+  }
+
+  .header_list_desktop_2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    height: 22px;
+    top: 15px;
+    left: 468px;
+  }
+
+  .header_list_desktop_3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    height: 22px;
+    top: 15px;
+    left: 847px;
+  }
+
+  .header_list_desktop_4 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    height: 22px;
+    top: 15px;
+    left: 1154px;
+  }
+
+  .header_list_desktop_font {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+  }
+}
